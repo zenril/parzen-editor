@@ -7,9 +7,9 @@ class CardListView extends React.Component {
     render() {
         const store = this.props.store;
         return (
-            { store.cards.map (
+            <div>{ store.cards.map (
                 (card, idx) => <div class='card'><CardView card={ card } key={ idx } /></div>
-            ) }
+            ) }</div>
         );
     }
 }
